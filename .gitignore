@@ -1,6 +1,8 @@
 .classpath
+dev.env
 eclipse/
 modules/
+lib/
 .project
 .settings/
 tmp/
