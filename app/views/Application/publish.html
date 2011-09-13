@@ -1,12 +1,12 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<h4>Delivered Message "${q}"</h4>
+<h4>Delivered Message "${msg}"</h4>
 
 <hr>
 
 <form action="@{Application.publish()}" method="GET">
-<input type="text" name="q" value="${q}">
+<input type="text" name="msg" value="${msg}">
 <br><br>
 <input type="submit" value="Publish Message">
 </form>

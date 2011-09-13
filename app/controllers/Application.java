@@ -16,9 +16,9 @@ public class Application extends Controller {
         render();
     }
 
-    public static void publish(String q) {
-    	RabbitMQPublisher.publish("myQueue", new SampleMessage(q, q));
-    	render(q);
+    public static void publish(String msg) {
+    	RabbitMQPublisher.publish("myQueue", new SampleMessage(msg));
+    	render(msg);
     }
 
 }
